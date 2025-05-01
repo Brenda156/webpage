@@ -1,9 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Página Clon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .google-logo {
+            font-size: 80px;
+            font-weight: bold;
+            color: #a020f0; /* Color lila */
+        }
+        .search-bar {
+            margin-top: 20px;
+            width: 500px;
+        }
+        input[type="text"] {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e8e9ea;
+        }
+    </style>
+</head>
 <body>
-
-<h1>mi primra pagina</h1>
-<p>brenda.</p>
-
+    <div class="google-logo">Google</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar en Google">
+    </div>
+    <div class="buttons">
+        <button>Buscar con Google</button>
+        <button>Voy a tener suerte</button>
+    </div>
 </body>
 </html>
