@@ -9,17 +9,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f1f1;
-            color: #333;
+            background: url('https://via.placeholder.com/1920x1080.png?text=Labiales+de+Fondo') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
         }
         header {
-            background-color: #e91e63;
+            background-color: rgba(233, 30, 99, 0.8);
             color: white;
             text-align: center;
             padding: 20px;
         }
         nav {
-            background-color: #f06292;
+            background-color: rgba(240, 98, 146, 0.8);
             padding: 10px;
             text-align: center;
         }
@@ -29,6 +30,9 @@
             margin: 0 15px;
             font-weight: bold;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .container {
             padding: 20px;
         }
@@ -37,7 +41,8 @@
             border-radius: 5px;
             padding: 15px;
             margin: 10px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
             text-align: center;
         }
         .product img {
@@ -48,7 +53,7 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #e91e63;
+            background-color: rgba(233, 30, 99, 0.8);
             color: white;
             position: fixed;
             bottom: 0;
@@ -57,16 +62,16 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <h1>Bienvenida a Nuestra Tienda de Maquillaje</h1>
     </header>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
     </nav>
-    <div class="container">
+    <div class="container" id="productos">
         <h2>Productos Destacados</h2>
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Labial">
@@ -83,6 +88,15 @@
             <h3>Base de Maquillaje</h3>
             <p>Precio: $20.00</p>
         </div>
+    </div>
+    <div class="container" id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una tienda apasionada por ofrecer los mejores productos de maquillaje para realzar tu belleza.</p>
+    </div>
+    <div class="container" id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Correo: contacto@tiendademaquillaje.com</p>
+        <p>Teléfono: +123 456 789</p>
     </div>
     <footer>
         <p>&copy; 2025 Tienda de Maquillaje. Todos los derechos reservados.</p>
