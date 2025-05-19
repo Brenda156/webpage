@@ -1,91 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Maquillaje</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f1f1;
-            color: #333;
-        }
-        header {
-            background-color: #e91e63;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            background-color: #f06292;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            padding: 15px;
-            margin: 10px;
-            background-color: white;
-            text-align: center;
-        }
-        .product img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #e91e63;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Google Simulado</title>
+  <style>
+    body {
+      background: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .logo {
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+    .logo span {
+      font-size: 80px;
+      font-weight: bold;
+      font-family: 'Product Sans', Arial, sans-serif;
+      letter-spacing: -8px;
+    }
+    .logo .blue { color: #4285f4; }
+    .logo .red { color: #ea4335; }
+    .logo .yellow { color: #fbbc05; }
+    .logo .green { color: #34a853; }
+    .logo .red2 { color: #ea4335; }
+    .logo .blue2 { color: #4285f4; }
+    .search-box {
+      margin: 0 auto 20px auto;
+      width: 100%;
+      max-width: 580px;
+      display: flex;
+      justify-content: center;
+    }
+    .search-box input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 18px;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px 0 0 24px;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .search-box button {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: 1px solid #dfe1e5;
+      border-left: none;
+      border-radius: 0 24px 24px 0;
+      background: #f8f9fa;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .search-box button:hover {
+      background: #f1f3f4;
+    }
+    @media (max-width: 600px) {
+      .logo span { font-size: 48px; }
+      .search-box { max-width: 90%; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenida a Nuestra Tienda de Maquillaje</h1>
-    </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
-    </nav>
-    <div class="container">
-        <h2>Productos Destacados</h2>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Labial">
-            <h3>Labial Mate</h3>
-            <p>Precio: $10.00</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Sombras">
-            <h3>Paleta de Sombras</h3>
-            <p>Precio: $25.00</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Base">
-            <h3>Base de Maquillaje</h3>
-            <p>Precio: $20.00</p>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2025 Tienda de Maquillaje. Todos los derechos reservados.</p>
-    </footer>
+  <div class="logo">
+    <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red2">e</span>
+  </div>
+  <form class="search-box" action="https://www.google.com/search" method="GET" target="_blank">
+    <input type="text" name="q" autocomplete="off" placeholder="Buscar en Google...">
+    <button type="submit">Buscar en Google</button>
+  </form>
 </body>
 </html>
