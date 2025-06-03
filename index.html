@@ -74,5 +74,14 @@
     <audio src="rels B.mp3" autoplay loop>
     Tu navegador no soporta el elemento de audio.
   </audio>
+   <div id="visit-counter" style="color:white; background:rgba(0,0,0,0.5); display:inline-block; padding:8px 18px; border-radius:20px; margin-top:24px;">
+    <span>Visitas: </span><span id="counter">0</span>
+  </div>
+  <script>
+    let visits = localStorage.getItem('visitcount');
+    visits = visits ? parseInt(visits) + 1 : 1;
+    localStorage.setItem('visitcount', visits);
+    document.getElementById('counter').textContent = visits;
+  </script>
 </body>
 </html>
