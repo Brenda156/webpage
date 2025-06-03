@@ -78,10 +78,16 @@
     <span>Visitas: </span><span id="counter">0</span>
   </div>
   <script>
+   if (!sessionStorage.getItem('visited')) {
     let visits = localStorage.getItem('visitcount');
     visits = visits ? parseInt(visits) + 1 : 1;
     localStorage.setItem('visitcount', visits);
+    sessionStorage.setItem('visited', 'yes');
     document.getElementById('counter').textContent = visits;
+  } else {
+    // Si ya se contó en esta sesión, solo mostrar el valor
+    document.getElementById('counter').textContent = localStorage.getItem('visitcount') || 1;
+  }
   </script>
 </body>
 </html>
